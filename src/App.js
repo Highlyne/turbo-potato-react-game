@@ -18,19 +18,35 @@ class App extends Component {
       box4amount:0    
   }
 
+  resetGame = () => {
+    // let amount = {...this.state};
+    let newBox1amount = Math.floor(Math.random() * 15) + 1;
+    let newBox2amount = Math.floor(Math.random() * 15) + 1;
+    let newBox3amount = Math.floor(Math.random() * 15) + 1;
+    let newBox4amount = Math.floor(Math.random() * 15) + 1;
+    this.setState({
+        box1amount: newBox1amount,    
+        box2amount: newBox2amount,    
+        box3amount: newBox3amount,    
+        box4amount: newBox4amount,
+        userScore: 0,
+        goal: Math.floor(Math.random() * 45) + 1 
+    });
+}
+
+
   startGame = () => {
       // let amount = {...this.state};
       let newBox1amount = Math.floor(Math.random() * 15) + 1;
       let newBox2amount = Math.floor(Math.random() * 15) + 1;
       let newBox3amount = Math.floor(Math.random() * 15) + 1;
       let newBox4amount = Math.floor(Math.random() * 15) + 1;
-      alert("setRandomAmount is fireing " + this.state.box3amount);
       this.setState({
           box1amount: newBox1amount,    
           box2amount: newBox2amount,    
           box3amount: newBox3amount,    
           box4amount: newBox4amount,
-          userScore: 10,
+          userScore: 0,
           wins: 0,
           games: 0,
           goal: Math.floor(Math.random() * 45) + 1 
@@ -38,16 +54,35 @@ class App extends Component {
   }
   
   sumBoxes = (amount) => {
-     const userScore = this.state.userScore 
-     let addUserScore = parseFloat(amount)
-     let newUserScore = userScore + addUserScore
-     alert("Your box is worth " + addUserScore) 
-     alert("Your user score is  " + userScore) 
-     alert("Your user score is  " + newUserScore) 
-     this.setState({
-       userScore: newUserScore
-     })
+
+     const wins = this.state.wins + 1 
+     const games = this.state.games + 1 
+     const goal = this.state.goal
+     let newUserScore = this.state.userScore + parseFloat(amount)
+    
+    
+      if (newUserScore > goal) {
+        alert("Your score is too high ")
+        this.setState({
+          games: games
+        }) 
+        this.resetGame()
+      } else if (newUserScore < goal) {
+        alert("Keep playing ")
+        this.setState({
+          userScore: newUserScore
+        })
+      } else if (newUserScore === goal) {
+        alert("You won " )
+        this.setState({
+          wins: wins
+        }) 
+        this.resetGame()
+      } else {
+      alert("Ooops something went wrong.  Try again.")
     }
+  }
+
   render() {
     return (
       <div className="App">
