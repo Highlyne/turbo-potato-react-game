@@ -9,9 +9,8 @@ class Playbox extends React.Component {
 
         return (
             <div className="playbox">
-                <p>Play buttons</p>
-                <p>{this.props.boxAmount}</p>
-                <button onClick={() => this.props.clickSum(this.props.boxAmount)}>+</button>
+            <a href="#" onClick={() => this.props.clickSum(this.props.boxAmount)}>
+            <img src= {this.props.paddle} alt="Paddle"></img></a>
             </div>
         )
     }

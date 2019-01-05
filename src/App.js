@@ -68,7 +68,6 @@ class App extends Component {
         }) 
         this.resetGame()
       } else if (newUserScore < goal) {
-        alert("Keep playing ")
         this.setState({
           userScore: newUserScore
         })
@@ -88,8 +87,8 @@ class App extends Component {
       <div className="App">
         <Titlebar />
         <Scoreboard wins={this.state.wins} gameScore={this.state.userScore} losses={this.state.games}/>
-        <GoalBox userGoal={this.state.goal}/>
-        <PlayArea gameState= {this.state} startGame={this.startGame} clickSum={this.sumBoxes}/>
+        <GoalBox userGoal={this.state.goal} startGame={this.startGame}/>
+        <PlayArea gameState= {this.state} clickSum={this.sumBoxes}/>
       </div>
     );
   }

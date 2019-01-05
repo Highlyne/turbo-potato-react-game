@@ -1,3 +1,6 @@
 .playArea {
     border: 3pt solid orange;
+    display: flex;
+    justify-content: space-around;
+
 }
