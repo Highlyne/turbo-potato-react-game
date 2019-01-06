@@ -1,7 +1,7 @@
 {
   "main.css": "/turbo-potato-react-game/static/css/main.8165a45d.chunk.css",
-  "main.js": "/turbo-potato-react-game/static/js/main.33cea821.chunk.js",
-  "main.js.map": "/turbo-potato-react-game/static/js/main.33cea821.chunk.js.map",
+  "main.js": "/turbo-potato-react-game/static/js/main.adc9de4c.chunk.js",
+  "main.js.map": "/turbo-potato-react-game/static/js/main.adc9de4c.chunk.js.map",
   "static/css/1.334ebb10.chunk.css": "/turbo-potato-react-game/static/css/1.334ebb10.chunk.css",
   "static/js/1.b228321d.chunk.js": "/turbo-potato-react-game/static/js/1.b228321d.chunk.js",
   "static/js/1.b228321d.chunk.js.map": "/turbo-potato-react-game/static/js/1.b228321d.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.8165a45d.chunk.css.map": "/turbo-potato-react-game/static/css/main.8165a45d.chunk.css.map",
   "static/css/1.334ebb10.chunk.css.map": "/turbo-potato-react-game/static/css/1.334ebb10.chunk.css.map",
   "index.html": "/turbo-potato-react-game/index.html",
-  "precache-manifest.fa07f86252fa6dc4512ce270bdc7c153.js": "/turbo-potato-react-game/precache-manifest.fa07f86252fa6dc4512ce270bdc7c153.js",
+  "precache-manifest.29486ddee2b57f784d82eec7f22873c1.js": "/turbo-potato-react-game/precache-manifest.29486ddee2b57f784d82eec7f22873c1.js",
   "service-worker.js": "/turbo-potato-react-game/service-worker.js"
 }
