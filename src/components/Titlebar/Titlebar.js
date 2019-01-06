@@ -2,8 +2,8 @@ import React from 'react';
 import "./Titlebar.css";
 
 const Titlebar = () => (
- <div className="title">
-     <h1>Fun Click Game Title Here</h1>
+ <div className="title font-effect-shadow-multiple">
+     <h1>Paddles Up</h1>
  </div>
 )
 

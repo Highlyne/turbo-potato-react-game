@@ -3,7 +3,7 @@ import Titlebar from './components/Titlebar/Titlebar';
 import Scoreboard from './components/Scoreboard/Scoreboard';
 import GoalBox from './components/GoalBox/GoalBox';
 import PlayArea from './components/PlayArea/PlayArea';
-
+import {randValues} from './helper';
 class App extends Component {
     // State of all of the game details.
     state = {
@@ -19,16 +19,12 @@ class App extends Component {
   }
 
   resetGame = () => {
-    // let amount = {...this.state};
-    let newBox1amount = Math.floor(Math.random() * 15) + 1;
-    let newBox2amount = Math.floor(Math.random() * 15) + 1;
-    let newBox3amount = Math.floor(Math.random() * 15) + 1;
-    let newBox4amount = Math.floor(Math.random() * 15) + 1;
+    
     this.setState({
-        box1amount: newBox1amount,    
-        box2amount: newBox2amount,    
-        box3amount: newBox3amount,    
-        box4amount: newBox4amount,
+        box1amount: randValues(),    
+        box2amount: randValues(),    
+        box3amount: randValues(),    
+        box4amount: randValues(),
         userScore: 0,
         goal: Math.floor(Math.random() * 45) + 1 
     });
@@ -36,16 +32,12 @@ class App extends Component {
 
 
   startGame = () => {
-      // let amount = {...this.state};
-      let newBox1amount = Math.floor(Math.random() * 15) + 1;
-      let newBox2amount = Math.floor(Math.random() * 15) + 1;
-      let newBox3amount = Math.floor(Math.random() * 15) + 1;
-      let newBox4amount = Math.floor(Math.random() * 15) + 1;
+     
       this.setState({
-          box1amount: newBox1amount,    
-          box2amount: newBox2amount,    
-          box3amount: newBox3amount,    
-          box4amount: newBox4amount,
+          box1amount: randValues(),    
+          box2amount: randValues(),    
+          box3amount: randValues(),    
+          box4amount: randValues(),
           userScore: 0,
           wins: 0,
           games: 0,
