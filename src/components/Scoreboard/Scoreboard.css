@@ -1,3 +1,12 @@
 .scoreBox {
     border: 2pt solid green;
 }
+
+#scoreboard-jumbotron {
+
+    background-color: pink;
+}
+
+#col {
+    border: red solid 5pt;
+}

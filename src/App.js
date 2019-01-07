@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import "./css/App.css";
 import Titlebar from './components/Titlebar/Titlebar';
+import Navbar from './components/Navbar/Navbar';
 import Scoreboard from './components/Scoreboard/Scoreboard';
 import GoalBox from './components/GoalBox/GoalBox';
 import PlayArea from './components/PlayArea/PlayArea';
@@ -81,6 +83,7 @@ class App extends Component {
         <Scoreboard wins={this.state.wins} gameScore={this.state.userScore} losses={this.state.games}/>
         <GoalBox userGoal={this.state.goal} startGame={this.startGame}/>
         <PlayArea gameState= {this.state} clickSum={this.sumBoxes}/>
+        <Navbar />
       </div>
     );
   }

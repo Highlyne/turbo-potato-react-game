@@ -1,9 +1,13 @@
-text {
-    size: 40pt;
-}
-
 .title {
     border: 5pt solid red;
     font-family: 'Luckiest Guy', cursive;
 
+}
+
+#titlebar-jumbotron {
+    height: 500px;
+    background-image: url('./eggBkg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
