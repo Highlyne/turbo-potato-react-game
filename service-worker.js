@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/turbo-potato-react-game/precache-manifest.69e4867ec43f467c5f11e64ed37dc420.js"
+  "/turbo-potato-react-game/precache-manifest.c15241b0ecf7ec4a5732850c880011d6.js"
 );
 
 workbox.clientsClaim();
