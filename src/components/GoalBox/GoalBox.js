@@ -6,7 +6,7 @@ class GoalBox extends React.Component {
         return (
             <div className="goalArea">
                 <h1>Goal to meet:<span>{this.props.userGoal}</span></h1>
-                <button onClick={this.props.startGame}>Start Game</button>
+                <h1>Current Score:<span>{this.props.gameScore}</span></h1>
             </div>
         )
     }

@@ -1,0 +1,21 @@
+#playboxImg {
+    height: 200pt;
+    width: 160pt;
+}
+
+.playbox:hover {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 680px) {
+    #playboxImg {
+        height: 100pt;
+        width: 80pt;
+    }
+    
+    .playbox:hover {
+        -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }

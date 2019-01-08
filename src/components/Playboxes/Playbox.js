@@ -11,7 +11,7 @@ class Playbox extends React.Component {
             
             <div className="playbox">
             <a href="#" onClick={() => this.props.clickSum(this.props.boxAmount)}>
-            <img src= {this.props.paddle} alt="Paddle"></img></a>
+            <img id="playboxImg" src= {this.props.paddle} alt="Paddle"></img></a>
             </div>
             
         )

@@ -1,6 +1,14 @@
 .playArea {
-    border: 3pt solid orange;
     display: flex;
     justify-content: space-around;
 
+}
+
+@media only screen and (max-width: 680px) {
+    .playArea {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    
+    }
 }
