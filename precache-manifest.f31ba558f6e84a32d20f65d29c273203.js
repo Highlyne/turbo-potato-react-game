@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/turbo-potato-react-game/static/js/runtime~main.e8c3ad40.js"
   },
   {
-    "revision": "545183f0894aa87ef546",
-    "url": "/turbo-potato-react-game/static/js/main.545183f0.chunk.js"
+    "revision": "549ce2d46e9aeeaf1d0b",
+    "url": "/turbo-potato-react-game/static/js/main.549ce2d4.chunk.js"
   },
   {
     "revision": "086e6aad35b2eef38eeb",
     "url": "/turbo-potato-react-game/static/js/1.086e6aad.chunk.js"
   },
   {
-    "revision": "545183f0894aa87ef546",
-    "url": "/turbo-potato-react-game/static/css/main.96ac9bf4.chunk.css"
+    "revision": "549ce2d46e9aeeaf1d0b",
+    "url": "/turbo-potato-react-game/static/css/main.cbacf3c4.chunk.css"
   },
   {
     "revision": "086e6aad35b2eef38eeb",
     "url": "/turbo-potato-react-game/static/css/1.2ddc6f04.chunk.css"
   },
   {
-    "revision": "d58979c55cd53ed1dfdcf69a6a347385",
+    "revision": "cca83112ec43065c9a61bb217e073aab",
     "url": "/turbo-potato-react-game/index.html"
   }
 ];
