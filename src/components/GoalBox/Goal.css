@@ -1,3 +1,21 @@
-.goalArea {
-    border: 5pt solid black;
+.goalArea > h1 {
+    font-size: 25pt;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+@media only screen and (min-width : 681px) and (max-width: 960px) {
+    
+    .goalArea > h1 {
+        font-size: 20pt;
+    }
+    
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 680px) {
+    /* Styles */
+    .goalArea > h1 {
+        font-size: 20pt;
+    }
+    
 }

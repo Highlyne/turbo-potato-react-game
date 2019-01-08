@@ -3,6 +3,7 @@ import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import Scoreboard from '../Scoreboard/Scoreboard';
 import GoalBox from '../GoalBox/GoalBox';
 import PlayArea from '../PlayArea/PlayArea';
+import './Wrapper.css';
 import {randValues} from '../../helper';
 class Wrapper extends React.Component {
 
@@ -81,14 +82,15 @@ class Wrapper extends React.Component {
             <Jumbotron id="scoreboard-jumbotron" >
             <Container>
             <Row>
-            <Col id="col" xs="auto">
+            <Col xs="1"></Col>
+            <Col xs="3">
             <Scoreboard wins={this.state.wins} gameScore={this.state.userScore} losses={this.state.games}/>
             </Col>
-            <Col id="col" xs="auto">
-            <a href="#" onClick={this.startGame}><img src="./images/bunny.png" /></a>
+            <Col id="col" xs="3">
+            <a href="#" onClick={this.startGame}><img id="bunnyPic" src="./images/bunny.png" /></a>
             
             </Col>
-            <Col id="col" xs="3">
+            <Col id="col" xs="4">
             <GoalBox userGoal={this.state.goal} gameScore={this.state.userScore} />
             </Col>
             </Row>

@@ -1,6 +1,6 @@
 #playboxImg {
-    height: 200pt;
-    width: 160pt;
+    height: 10em;
+    width: 8em;
 }
 
 .playbox:hover {
@@ -8,14 +8,12 @@
   transform: scaleX(-1);
 }
 
-@media only screen and (max-width: 680px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 680px) {
+    /* Styles */
     #playboxImg {
-        height: 100pt;
-        width: 80pt;
+        height: 260px;
+        width: 220px;
     }
     
-    .playbox:hover {
-        -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-    }
-  }
+}

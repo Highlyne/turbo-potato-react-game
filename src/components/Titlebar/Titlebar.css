@@ -21,7 +21,7 @@
 }
 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (min-width : 681px) and (max-width: 960px) {
     .titlebar > h1 {
         font-size: 6em;
     }
@@ -31,13 +31,14 @@
     
 }
 
-
-@media only screen and (max-width: 680px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 680px) {
+    /* Styles */
     .titlebar > h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
     .titlebar > h1:hover {
-        font-size: 5.5em;
+        font-size: 4.5em;
     }
     
 }
